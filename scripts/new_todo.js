@@ -37,7 +37,7 @@ async function loadCategoryDropdown() {
     const categoryData = await response.json();
 
     categoryData.forEach((task) => {
-      let categoryOption = new Option(task.name, task.id);
+      let categoryOption = new Option(task.name, task.name);
       categoryDropdown.appendChild(categoryOption);
     });
   } catch (error) {

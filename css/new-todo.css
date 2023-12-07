@@ -37,7 +37,7 @@ body {
     width: 40vw;
     height:auto;
     max-width:600px;
-    color:#999;
+    color:rgb(0, 0, 0);
     font-weight:400;
     font-size:15px;
     font-family:'Ubuntu', Helvetica, Arial, sans-serif;

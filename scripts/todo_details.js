@@ -75,6 +75,5 @@ function putRequestOnSubmit(_task) {
                 console.log("PUT Request failed", error);
             }
         }
-        window.location.href = "http://localhost:5500/todos.html"
     }
 }
