@@ -23,8 +23,12 @@ async function displayURLParamsToForm() {
         const description = document.getElementById('description');
         description.value = taskData.description
 
+        const date = new Date(taskData.deadline);
+        const formatDate = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
+        const newDate = date.toLocaleDateString('en-US', formatDate)
+
         const deadline = document.getElementById('deadline');
-        deadline.value = taskData.deadline
+        deadline.value = newDate;
 
         const priority = document.getElementById('priority');
         priority.value = taskData.priority

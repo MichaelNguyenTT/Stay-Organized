@@ -50,8 +50,9 @@ function displayUserTasks(_tasks) {
   console.log(data);
 
   data.forEach((item) => {
-    let date = new Date(item.deadline);
-    date.toLocaleString();
+    const date = new Date(item.deadline);
+    const formatDate = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric'};
+    const newDate = date.toLocaleDateString('en-US', formatDate)
   
 
     const newCard = document.createElement("div");
@@ -60,7 +61,7 @@ function displayUserTasks(_tasks) {
     <h2 class="post-title">${item.category}<hr /></h2>
     <h4 class="post-priority">Priority: <strong>${item.priority}</strong></h4>
     <p class="post-desc">&#8729;${item.description}</p>
-    <p class="post-date">${date}</p>
+    <p class="post-date">${newDate}</p>
     <p class="post-complete">Completed: ${item.completed ? "✔" : "✘"}</p>
     <p class="post-detail"><button><a href=http://localhost:5500/todo_details.html?id=${item.id}>See Details</button></p>
     </div>`
