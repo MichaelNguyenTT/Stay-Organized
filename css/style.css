@@ -1,0 +1,82 @@
+* {
+    font-family: 'Droid serif', serif !important;
+    text-decoration: none !important;
+}
+
+body {
+    background:rgb(182, 182, 182) !important
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    height: 20vh;
+    margin-top: 10px;
+}
+
+#dropdownMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#displayTasks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    width: auto;
+    height: 100vh;
+}
+
+#userDropdown {
+    width: 25vw;;
+}
+
+.postNote {
+    margin-right: 40px;
+    padding-top:16px;
+    padding-bottom:16px;
+    padding-left:8px;
+    padding-right:8px;
+    background-color:rgb(242, 210, 48);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    -webkit-transform:rotate(-2deg);
+    -o-transform:rotate(-4deg);
+    -moz-transform:rotate(-4deg);
+    width:240px;
+    height:350px;
+    border-radius: 10px;
+}
+
+.post-title {
+    font-weight: bold;
+}
+.post-priority {
+    font-size: 0.9rem;
+}
+
+.post-desc {
+    font-size: 1.2rem;
+}
+
+.post-date {
+    font-size: 0.7rem;
+}
+.post-detail button {
+    padding: 5px;
+    border-radius: 5px;
+    border-color: lightgoldenrodyellow;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color:rgb(246, 236, 186);
+}
+.post-detail a {
+    color: black;
+}
